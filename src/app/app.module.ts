@@ -7,6 +7,7 @@ import { ProductsComponent } from "app/products.component";
 import { BookComponent } from "app/books.component";
 import { RatingComponent } from "app/rating.component";
 import { ProductComponent } from "app/product.component";
+import { TruncatePipe } from "app/truncate.pipe";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductComponent } from "app/product.component";
     ProductsComponent,
     BookComponent,
     RatingComponent,
-    ProductComponent
+    ProductComponent,
+    TruncatePipe
 
   ],
   imports: [
