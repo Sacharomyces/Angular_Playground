@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductService } from "app/products.service";
+import { ProductService } from "app/product.service";
 import { BookService } from "app/book.service";
 
 @Component({
@@ -20,6 +20,7 @@ import { BookService } from "app/book.service";
    <button (click)="onClick($event)">kliknij</button>
    <input type="text" [(ngModel)]="typedText"/>
    Napisałeś:{{typedText}}
+   <rating [rating-value]="4"></rating>
   
   `,
   providers:[
