@@ -5,7 +5,11 @@ import { BookService } from "app/book.service";
 @Component({
   selector: 'app-root',
   template: `
-  <h1>{{title}}</h1>
+  <bs-jumbotron>
+    <div class="heading">Koty i inne Mamroty:)</div>
+    <div class="body">Wszystko o kotach i ich gupim stylu bycia.</div>
+    <div class="button">Kup Kota</div>
+  </bs-jumbotron>
   <products></products>
   <books></books>
   <img src={{imageUrl}}/>
@@ -30,7 +34,7 @@ import { BookService } from "app/book.service";
   
 })
 export class AppComponent {
-  title = 'Moja apka';
+
   imageUrl="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwiKw9xPE6ZTl490JW-wqvQZD5shpSraY8CLCs5-8VEMK7sO1H"
   isActive=true;
   onClick($event){
