@@ -7,7 +7,7 @@ import { User } from "app/user";
     templateUrl:'user-form.component.html'
 })
 
-export class UserFormComponet{
+export class UserFormComponent{
         countries = ["USA","Poland","Finland","China"];
         model = new User('','','');
         submitted = false;

@@ -9,6 +9,7 @@ import { RatingComponent } from "app/rating.component";
 import { ProductComponent } from "app/product.component";
 import { TruncatePipe } from "app/truncate.pipe";
 import { JumboTronComponent } from "app/jumbotron.component";
+import { UserFormComponent } from "app/user-form.component";
 
 @NgModule({
   declarations: [
@@ -18,13 +19,15 @@ import { JumboTronComponent } from "app/jumbotron.component";
     RatingComponent,
     ProductComponent,
     TruncatePipe,
-    JumboTronComponent
+    JumboTronComponent,
+    UserFormComponent
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

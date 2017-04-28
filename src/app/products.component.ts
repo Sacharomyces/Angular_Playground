@@ -6,14 +6,16 @@ import {ProductService} from "./product.service"
 @Component({
     selector: "products",
     template:`
-    <h2>Kotki</h2>
-    <div *ngIf="products.length >0">
-        <div *ngFor= "let product of products">
-            <product [data]="product"></product>
+    <div class="container">
+        <h2>Kotki</h2>
+        <div *ngIf="products.length >0">
+            <div *ngFor= "let product of products">
+                <product [data]="product"></product>
+            </div>
         </div>
-    </div>
-    <div *ngIf="products.length == 0">
-        <h3>Nie ma kotków</h3>
+        <div *ngIf="products.length == 0">
+            <h3>Nie ma kotków</h3>
+        </div>
     </div>
     `,
     providers: [ProductService]
