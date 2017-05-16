@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from "app/products.component";
@@ -10,6 +10,8 @@ import { ProductComponent } from "app/product.component";
 import { TruncatePipe } from "app/truncate.pipe";
 import { JumboTronComponent } from "app/jumbotron.component";
 import { UserFormComponent } from "app/user-form.component";
+import { LoginComponent } from "app/login.component";
+import { LoginService } from "app/login.service";
 
 @NgModule({
   declarations: [
@@ -20,16 +22,17 @@ import { UserFormComponent } from "app/user-form.component";
     ProductComponent,
     TruncatePipe,
     JumboTronComponent,
-    UserFormComponent
+    UserFormComponent,
+    LoginComponent
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    FormsModule
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

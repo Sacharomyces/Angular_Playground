@@ -11,6 +11,7 @@ import { BookService } from "app/book.service";
     <div class="button">Kup Kota</div>
   </bs-jumbotron>
   <user-form></user-form>
+  <login></login>
   <products></products>
   <books></books>
   <img src={{imageUrl}}/>
