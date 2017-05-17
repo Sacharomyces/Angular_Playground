@@ -12,6 +12,7 @@ import { JumboTronComponent } from "app/jumbotron.component";
 import { UserFormComponent } from "app/user-form.component";
 import { LoginComponent } from "app/login.component";
 import { LoginService } from "app/login.service";
+import { SearchComponent } from "app/search.component";
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import { LoginService } from "app/login.service";
     TruncatePipe,
     JumboTronComponent,
     UserFormComponent,
-    LoginComponent
-
+    LoginComponent,
+    SearchComponent
+   
   ],
   imports: [
     BrowserModule,

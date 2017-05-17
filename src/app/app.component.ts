@@ -10,6 +10,7 @@ import { BookService } from "app/book.service";
     <div class="body">Wszystko o kotach i ich gupim stylu bycia.</div>
     <div class="button">Kup Kota</div>
   </bs-jumbotron>
+  <search></search>
   <user-form></user-form>
   <login></login>
   <products></products>
